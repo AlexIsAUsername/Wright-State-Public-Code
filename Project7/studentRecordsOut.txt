@@ -1,0 +1,59 @@
+Student Records
+===============
+
+UID: 111
+First Name: Tom
+Last Name: Hanks
+Level: Grad
+Classes:
+CS3100
+CS3180
+CEG2170
+CEG3310
+MTH2570
+..................
+..................
+
+UID: 222
+First Name: Amanda
+Last Name: Clark
+Level: Undergrad
+Classes:
+CEG3310
+MTH2570
+..................
+..................
+
+UID: 333
+First Name: John
+Last Name: Thomas
+Level: Undergrad
+Classes:
+CS3100
+CEG2170
+MTH2570
+..................
+..................
+
+UID: 444
+First Name: Sara
+Last Name: North
+Level: Grad
+Classes:
+CS3180
+CEG2170
+CEG3310
+..................
+..................
+
+UID: 555
+First Name: Mark
+Last Name: Smith
+Level: Undergrad
+Classes:
+CEG2170
+CEG3310
+MTH2570
+CS3100
+..................
+..................
