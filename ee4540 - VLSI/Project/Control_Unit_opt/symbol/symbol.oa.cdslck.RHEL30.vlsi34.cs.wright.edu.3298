@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      ee45400h
+HostName                       vlsi34.cs.wright.edu
+ProcessIdentifier              3298
+ProcessCreationTime_UTC        1701959360
+ProcessCreationTime_Readable   Thu Dec  7 09:29:20 2023 EST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /home/ee45400h/Project/Control_Unit_opt/symbol/symbol.oa.cdslck
+TimeEditLocked                 Thu Dec  7 09:30:45 2023 EST
