@@ -1,0 +1,5 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ecslogon/Desktop/Lab 3/booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'booth'
+INFO: [VRFC 10-3107] analyzing entity 'stage'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ecslogon/Desktop/Lab 3/tb_booth.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_booth'

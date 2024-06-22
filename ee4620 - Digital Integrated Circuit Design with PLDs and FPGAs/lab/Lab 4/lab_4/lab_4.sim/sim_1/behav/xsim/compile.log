@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'REG'
+INFO: [VRFC 10-3107] analyzing entity 'FA'
+INFO: [VRFC 10-3107] analyzing entity 'pipelined_adder'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/ecslogon/Desktop/Project summer 2024/tb_pipelined_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_pipelined_adder'

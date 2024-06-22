@@ -1,0 +1,16 @@
+Time resolution is 1 ps
+Failure: error -- answer wrong!  :(
+Time: 1030 ns  Iteration: 0  Process: /TB_RCA/test_ADDER  File: /home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd
+$finish called at time : 1030 ns : File "/home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd" Line 101
+Failure: error -- answer wrong!  :(
+Time: 1440 ns  Iteration: 0  Process: /TB_RCA/test_ADDER  File: /home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd
+$finish called at time : 1440 ns : File "/home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd" Line 101
+Failure: error -- answer wrong!  :(
+Time: 1850 ns  Iteration: 0  Process: /TB_RCA/test_ADDER  File: /home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd
+$finish called at time : 1850 ns : File "/home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd" Line 101
+Failure: error -- answer wrong!  :(
+Time: 2260 ns  Iteration: 0  Process: /TB_RCA/test_ADDER  File: /home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd
+$finish called at time : 2260 ns : File "/home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd" Line 101
+Failure: error -- answer wrong!  :(
+Time: 2670 ns  Iteration: 0  Process: /TB_RCA/test_ADDER  File: /home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd
+$finish called at time : 2670 ns : File "/home/ecslogon/Desktop/Lab 1/vhdl files/tb_rca.vhd" Line 101

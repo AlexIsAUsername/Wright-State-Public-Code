@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../vhdl files/rca__w_add3.vhd" \
+"../../../../../vhdl files/tb_rca.vhd" \
+
+# Do not sort compile order
+nosort

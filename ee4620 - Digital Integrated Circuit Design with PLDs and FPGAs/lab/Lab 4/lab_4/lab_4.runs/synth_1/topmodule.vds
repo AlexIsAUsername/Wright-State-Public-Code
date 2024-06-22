@@ -1,0 +1,435 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Jun  6 15:00:10 2024
+# Process ID: 14464
+# Current directory: /home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.runs/synth_1
+# Command line: vivado -log topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+# Log file: /home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.runs/synth_1/topmodule.vds
+# Journal file: /home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.runs/synth_1/vivado.jou
+# Running On: r434-25-122, OS: Linux, CPU Frequency: 3288.598 MHz, CPU Physical cores: 2, Host memory: 16046 MB
+#-----------------------------------------------------------
+source topmodule.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1465.031 ; gain = 58.828 ; free physical = 9337 ; free virtual = 19727
+Command: read_checkpoint -auto_incremental -incremental {/home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.srcs/utils_1/imports/synth_1/topmodule.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.srcs/utils_1/imports/synth_1/topmodule.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top topmodule -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14546
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2235.250 ; gain = 404.699 ; free physical = 8284 ; free virtual = 18674
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodule' [/home/ecslogon/Desktop/Project summer 2024/topmodule.vhd:54]
+INFO: [Synth 8-3491] module 'oled_ctrl' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:10' bound to instance 'Comp_th' of component 'oled_ctrl' [/home/ecslogon/Desktop/Project summer 2024/topmodule.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'oled_ctrl' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:23]
+INFO: [Synth 8-3491] module 'oled_init' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/oled_init.vhd:8' bound to instance 'Initialize' of component 'oled_init' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_init.vhd:21]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/spi_ctrl.vhd:8' bound to instance 'spi_comp' of component 'spi_ctrl' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_init.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'spi_ctrl' [/home/ecslogon/Desktop/Project summer 2024/oled src/spi_ctrl.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctrl' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/spi_ctrl.vhd:18]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/delay.vhd:8' bound to instance 'delay_comp' of component 'delay' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_init.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/ecslogon/Desktop/Project summer 2024/oled src/delay.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'delay' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/delay.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_init.vhd:21]
+INFO: [Synth 8-3491] module 'oled_ex' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:10' bound to instance 'Example' of component 'oled_ex' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'oled_ex' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:21]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/spi_ctrl.vhd:8' bound to instance 'spi_comp' of component 'spi_ctrl' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:146]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/delay.vhd:8' bound to instance 'delay_comp' of component 'delay' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:155]
+INFO: [Synth 8-3491] module 'ascii_rom' declared at '/home/ecslogon/Desktop/Project summer 2024/oled src/ascii_rom.vhd:7' bound to instance 'char_lib_comp' of component 'ascii_rom' [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'ascii_rom' [/home/ecslogon/Desktop/Project summer 2024/oled src/ascii_rom.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'ascii_rom' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/ascii_rom.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'oled_ex' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ex.vhd:21]
+INFO: [Synth 8-226] default block is never used [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'oled_ctrl' (0#1) [/home/ecslogon/Desktop/Project summer 2024/oled src/oled_ctrl.vhd:23]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'pipelined_adder' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:67' bound to instance 'comp_ADD' of component 'pipelined_adder' [/home/ecslogon/Desktop/Project summer 2024/topmodule.vhd:144]
+INFO: [Synth 8-638] synthesizing module 'pipelined_adder' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:77]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_0' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'FA' (0#1) [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:48]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s0_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'REG' (0#1) [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:12]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s0_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:130]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s0_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:131]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s0_3' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:132]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_1' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:138]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s1_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:140]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s1_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:141]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s1_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:142]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s1_3' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:143]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_cou1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:145]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A2_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:149]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B2_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:150]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_2' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:152]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s2_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:154]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s2_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:155]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s2_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:156]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A3_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:162]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B3_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:163]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_3' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:165]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s3_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:167]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s3_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:168]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s3_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:169]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_cou3' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:171]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A4_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:175]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B4_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:176]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A4_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:177]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B4_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:178]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_4' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:180]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s4_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:182]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s4_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:183]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A5_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:189]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B5_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:190]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A5_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:191]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B5_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:192]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_5' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:194]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s5_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:196]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s5_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:197]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_cou5' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:199]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A6_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:203]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B6_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:204]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A6_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:205]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B6_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:206]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A6_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:207]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B6_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:208]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_6' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:210]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s6_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:212]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A7_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:218]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B7_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:219]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A7_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:220]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B7_1' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:221]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_A7_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:222]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_B7_2' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:223]
+INFO: [Synth 8-3491] module 'FA' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:42' bound to instance 'FA_7' of component 'FA' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:225]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_s7_0' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:227]
+INFO: [Synth 8-3491] module 'REG' declared at '/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:6' bound to instance 'reg_cou7' of component 'REG' [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:229]
+INFO: [Synth 8-256] done synthesizing module 'pipelined_adder' (0#1) [/home/ecslogon/Desktop/Project summer 2024/pipelined_adder_half_pipe.vhd:77]
+INFO: [Synth 8-256] done synthesizing module 'topmodule' (0#1) [/home/ecslogon/Desktop/Project summer 2024/topmodule.vhd:54]
+WARNING: [Synth 8-7129] Port addr[10] in module ascii_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port hi in module oled_ctrl is either unconnected or has no load
+WARNING: [Synth 8-7129] Port E in module topmodule is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.227 ; gain = 507.676 ; free physical = 8183 ; free virtual = 18574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2353.062 ; gain = 522.512 ; free physical = 8173 ; free virtual = 18564
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2353.062 ; gain = 522.512 ; free physical = 8173 ; free virtual = 18564
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2353.062 ; gain = 0.000 ; free physical = 8173 ; free virtual = 18564
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ecslogon/Desktop/Project summer 2024/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [/home/ecslogon/Desktop/Project summer 2024/constraints.xdc:19]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [/home/ecslogon/Desktop/Project summer 2024/constraints.xdc:20]
+Finished Parsing XDC File [/home/ecslogon/Desktop/Project summer 2024/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ecslogon/Desktop/Project summer 2024/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2463.797 ; gain = 0.000 ; free physical = 8147 ; free virtual = 18538
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2463.797 ; gain = 0.000 ; free physical = 8147 ; free virtual = 18538
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2463.801 ; gain = 633.250 ; free physical = 8145 ; free virtual = 18530
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8145 ; free virtual = 18530
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8146 ; free virtual = 18530
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'oled_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    send |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+             oledexample |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'oled_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8132 ; free virtual = 18526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 9     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 8     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 80    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 62    
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  30 Input   12 Bit        Muxes := 1     
+	  30 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 9     
+	  30 Input    8 Bit        Muxes := 65    
+	   4 Input    8 Bit        Muxes := 16    
+	   2 Input    7 Bit        Muxes := 5     
+	  28 Input    5 Bit        Muxes := 1     
+	  30 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 7     
+	  30 Input    2 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 24    
+	  28 Input    1 Bit        Muxes := 10    
+	  30 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register temp_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-7129] Port E in module topmodule is either unconnected or has no load
+WARNING: [Synth 8-7129] Port W in module topmodule is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (Comp_th/Initialize/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (Comp_th/Initialize/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (Comp_th/Example/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (Comp_th/Example/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8127 ; free virtual = 18526
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------------------------+---------------+----------------+
+|Module Name | RTL Object                     | Depth x Width | Implemented As | 
++------------+--------------------------------+---------------+----------------+
+|oled_init   | after_state                    | 32x1          | LUT            | 
+|oled_init   | after_state                    | 32x5          | LUT            | 
+|oled_init   | temp_sdata                     | 32x1          | LUT            | 
+|oled_init   | temp_sdata                     | 32x8          | LUT            | 
+|oled_ex     | after_state                    | 32x1          | LUT            | 
+|oled_ex     | temp_addr                      | 32x1          | LUT            | 
+|oled_ex     | after_state                    | 32x1          | LUT            | 
+|oled_ex     | temp_addr                      | 32x1          | LUT            | 
+|oled_ex     | char_lib_comp/dout_reg         | 1024x8        | Block RAM      | 
+|topmodule   | Comp_th/Initialize/after_state | 32x5          | LUT            | 
+|topmodule   | Comp_th/Initialize/temp_sdata  | 32x8          | LUT            | 
+|topmodule   | Comp_th/Initialize/after_state | 32x1          | LUT            | 
+|topmodule   | Comp_th/Initialize/temp_sdata  | 32x1          | LUT            | 
++------------+--------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8113 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8069 ; free virtual = 18524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance Comp_th/Example/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8071 ; free virtual = 18524
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|topmodule   | comp_ADD/reg_s0_3/Q_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|topmodule   | comp_ADD/reg_s1_3/Q_reg | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++------------+-------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    18|
+|3     |LUT1     |    16|
+|4     |LUT2     |    65|
+|5     |LUT3     |    66|
+|6     |LUT4     |    65|
+|7     |LUT5     |    83|
+|8     |LUT6     |    77|
+|9     |MUXF7    |    16|
+|10    |MUXF8    |     1|
+|11    |RAMB18E1 |     1|
+|12    |SRL16E   |     2|
+|13    |FDRE     |   333|
+|14    |FDSE     |    16|
+|15    |IBUF     |    12|
+|16    |OBUF     |    14|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2463.805 ; gain = 522.520 ; free physical = 8076 ; free virtual = 18525
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 2463.805 ; gain = 633.254 ; free physical = 8076 ; free virtual = 18525
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2463.805 ; gain = 0.000 ; free physical = 8366 ; free virtual = 18815
+INFO: [Netlist 29-17] Analyzing 36 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2463.805 ; gain = 0.000 ; free physical = 8403 ; free virtual = 18815
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c0268c6a
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 13 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:42 . Memory (MB): peak = 2463.805 ; gain = 994.797 ; free physical = 8400 ; free virtual = 18815
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1819.673; main = 1502.858; forked = 342.718
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3771.488; main = 2463.801; forked = 1307.688
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2487.809 ; gain = 0.000 ; free physical = 8400 ; free virtual = 18815
+INFO: [Common 17-1381] The checkpoint '/home/ecslogon/Desktop/Project summer 2024/lab_4/lab_4.runs/synth_1/topmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topmodule_utilization_synth.rpt -pb topmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  6 15:01:16 2024...

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 30 15:00:38 2024
+# Process ID: 15880
+# Current directory: /home/ecslogon/Desktop/Lab 3/lab3/lab3.runs/impl_1
+# Command line: vivado -log top_module.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_module.tcl -notrace
+# Log file: /home/ecslogon/Desktop/Lab 3/lab3/lab3.runs/impl_1/top_module.vdi
+# Journal file: /home/ecslogon/Desktop/Lab 3/lab3/lab3.runs/impl_1/vivado.jou
+# Running On: r434-25-122, OS: Linux, CPU Frequency: 3142.480 MHz, CPU Physical cores: 2, Host memory: 16046 MB
+#-----------------------------------------------------------
+source top_module.tcl -notrace

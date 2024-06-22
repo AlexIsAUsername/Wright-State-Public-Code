@@ -1,0 +1,15 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecslogon/Desktop/Lab 3/lab3/lab3.sim/sim_1/synth/func/xsim/tb_booth_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ascii_rom
+INFO: [VRFC 10-311] analyzing module booth
+INFO: [VRFC 10-311] analyzing module delay
+INFO: [VRFC 10-311] analyzing module delay_2
+INFO: [VRFC 10-311] analyzing module oled_ctrl
+INFO: [VRFC 10-311] analyzing module oled_ex
+INFO: [VRFC 10-311] analyzing module oled_init
+INFO: [VRFC 10-311] analyzing module spi_ctrl
+INFO: [VRFC 10-311] analyzing module spi_ctrl_3
+INFO: [VRFC 10-311] analyzing module stage
+INFO: [VRFC 10-311] analyzing module stage_0
+INFO: [VRFC 10-311] analyzing module stage_1
+INFO: [VRFC 10-311] analyzing module top_module
+INFO: [VRFC 10-311] analyzing module glbl

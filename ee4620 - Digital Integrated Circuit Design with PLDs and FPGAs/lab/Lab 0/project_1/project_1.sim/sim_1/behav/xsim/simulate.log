@@ -1,0 +1,4 @@
+Time resolution is 1 ps
+Failure: sim done!  :)
+Time: 32 ns  Iteration: 0  Process: /TB_COMB_FUNC/test_VECTOR  File: /home/ecslogon/Desktop/Lab 0 summer 2024/tb_comb_function.vhd
+$finish called at time : 32 ns : File "/home/ecslogon/Desktop/Lab 0 summer 2024/tb_comb_function.vhd" Line 45

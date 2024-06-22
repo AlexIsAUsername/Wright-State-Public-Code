@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../pipelined_adder_half_pipe.vhd" \
+"../../../../../tb_pipelined_adder.vhd" \
+
+# Do not sort compile order
+nosort

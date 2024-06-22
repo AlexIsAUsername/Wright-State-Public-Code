@@ -1,0 +1,496 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu May 23 15:10:40 2024
+# Process ID: 26063
+# Current directory: /home/ecslogon/Desktop/Lab 2/lab2/lab2.runs/synth_1
+# Command line: vivado -log topmodule.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topmodule.tcl
+# Log file: /home/ecslogon/Desktop/Lab 2/lab2/lab2.runs/synth_1/topmodule.vds
+# Journal file: /home/ecslogon/Desktop/Lab 2/lab2/lab2.runs/synth_1/vivado.jou
+# Running On: r434-25-122, OS: Linux, CPU Frequency: 3246.728 MHz, CPU Physical cores: 2, Host memory: 16046 MB
+#-----------------------------------------------------------
+source topmodule.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1465.031 ; gain = 58.828 ; free physical = 10693 ; free virtual = 21109
+Command: read_checkpoint -auto_incremental -incremental {/home/ecslogon/Desktop/Lab 2/lab2/lab2.srcs/utils_1/imports/synth_1/topmodule.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ecslogon/Desktop/Lab 2/lab2/lab2.srcs/utils_1/imports/synth_1/topmodule.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top topmodule -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 26169
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2236.336 ; gain = 404.785 ; free physical = 9650 ; free virtual = 20065
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'topmodule' [/home/ecslogon/Desktop/Lab 2/design src/topmodule/topmodule_Mealy1111.vhd:29]
+INFO: [Synth 8-3491] module 'lfsr' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/lsfr.vhd:12' bound to instance 'comp_lfsr' of component 'lfsr' [/home/ecslogon/Desktop/Lab 2/design src/topmodule/topmodule_Mealy1111.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'lfsr' [/home/ecslogon/Desktop/Lab 2/design src/oled src/lsfr.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'lfsr' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/lsfr.vhd:20]
+INFO: [Synth 8-3491] module 'oled_ctrl' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:15' bound to instance 'comp_oled' of component 'oled_ctrl' [/home/ecslogon/Desktop/Lab 2/design src/topmodule/topmodule_Mealy1111.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'oled_ctrl' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:27]
+INFO: [Synth 8-3491] module 'oled_init' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_init.vhd:13' bound to instance 'Initialize' of component 'oled_init' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'oled_init' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_init.vhd:26]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_init.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'spi_ctrl' [/home/ecslogon/Desktop/Lab 2/design src/oled src/spi_ctrl.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'spi_ctrl' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/spi_ctrl.vhd:24]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_init.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'delay' [/home/ecslogon/Desktop/Lab 2/design src/oled src/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'delay' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/delay.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'oled_init' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_init.vhd:26]
+INFO: [Synth 8-3491] module 'oled_ex' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:16' bound to instance 'Example' of component 'oled_ex' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'oled_ex' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:27]
+INFO: [Synth 8-3491] module 'spi_ctrl' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/spi_ctrl.vhd:14' bound to instance 'spi_comp' of component 'spi_ctrl' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:153]
+INFO: [Synth 8-3491] module 'delay' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/delay.vhd:13' bound to instance 'delay_comp' of component 'delay' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:162]
+INFO: [Synth 8-3491] module 'ascii_rom' declared at '/home/ecslogon/Desktop/Lab 2/design src/oled src/ascii_rom.vhd:12' bound to instance 'char_lib_comp' of component 'ascii_rom' [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'ascii_rom' [/home/ecslogon/Desktop/Lab 2/design src/oled src/ascii_rom.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ascii_rom' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/ascii_rom.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'oled_ex' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:27]
+INFO: [Synth 8-226] default block is never used [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:116]
+INFO: [Synth 8-256] done synthesizing module 'oled_ctrl' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ctrl.vhd:27]
+INFO: [Synth 8-3491] module 'mealy' declared at '/home/ecslogon/Desktop/Lab 2/design src/mealy/Mealy1111.vhd:4' bound to instance 'comp_design' of component 'mealy' [/home/ecslogon/Desktop/Lab 2/design src/topmodule/topmodule_Mealy1111.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'mealy' [/home/ecslogon/Desktop/Lab 2/design src/mealy/Mealy1111.vhd:11]
+INFO: [Synth 8-226] default block is never used [/home/ecslogon/Desktop/Lab 2/design src/mealy/Mealy1111.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'mealy' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/mealy/Mealy1111.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'topmodule' (0#1) [/home/ecslogon/Desktop/Lab 2/design src/topmodule/topmodule_Mealy1111.vhd:29]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,16] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,17] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,18] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,19] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,20] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[0,21] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,16] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,17] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,18] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,19] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,20] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[1,21] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,16] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,17] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,18] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,19] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,20] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[2,21] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,16] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,17] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,18] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,19] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,20] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-6014] Unused sequential element current_screen_reg[3,21] was removed.  [/home/ecslogon/Desktop/Lab 2/design src/oled src/oled_ex.vhd:186]
+WARNING: [Synth 8-7129] Port addr[10] in module ascii_rom is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,16][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,17][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,18][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,19][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,20][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[0,21][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,16][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,17][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,18][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,19][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,20][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][5] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][4] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][3] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][2] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][1] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[1,21][0] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[2,16][7] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[2,16][6] in module oled_ex is either unconnected or has no load
+WARNING: [Synth 8-7129] Port data[2,16][5] in module oled_ex is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2338.281 ; gain = 506.730 ; free physical = 9551 ; free virtual = 19968
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2350.148 ; gain = 518.598 ; free physical = 9574 ; free virtual = 19984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2350.148 ; gain = 518.598 ; free physical = 9574 ; free virtual = 19984
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2350.148 ; gain = 0.000 ; free physical = 9574 ; free virtual = 19984
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ecslogon/Desktop/Lab 2/design src/constraints/constraints.xdc]
+WARNING: [Vivado 12-507] No nets matched 'N_IBUF'. [/home/ecslogon/Desktop/Lab 2/design src/constraints/constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/ecslogon/Desktop/Lab 2/design src/constraints/constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/ecslogon/Desktop/Lab 2/design src/constraints/constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ecslogon/Desktop/Lab 2/design src/constraints/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/topmodule_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/topmodule_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2465.883 ; gain = 0.000 ; free physical = 9557 ; free virtual = 19967
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2465.883 ; gain = 0.000 ; free physical = 9556 ; free virtual = 19966
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2465.887 ; gain = 634.336 ; free physical = 9556 ; free virtual = 19966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9556 ; free virtual = 19966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9556 ; free virtual = 19966
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'spi_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'oled_ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'present_state_reg' in module 'mealy'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    send |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'spi_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+                    hold |                             0010 |                               01
+                    done |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                               00
+          oledinitialize |                             0010 |                               01
+             oledexample |                             0100 |                               10
+                    done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'oled_ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     st0 |                               00 |                               00
+                     st1 |                               01 |                               01
+                     st2 |                               10 |                               10
+                     st3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'present_state_reg' using encoding 'sequential' in module 'mealy'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9555 ; free virtual = 19966
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 2     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 70    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 16    
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	  30 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	  30 Input   11 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	  30 Input    8 Bit        Muxes := 65    
+	   4 Input    8 Bit        Muxes := 16    
+	  28 Input    5 Bit        Muxes := 1     
+	  30 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 5     
+	   2 Input    4 Bit        Muxes := 7     
+	  30 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 6     
+	   2 Input    1 Bit        Muxes := 23    
+	  28 Input    1 Bit        Muxes := 10    
+	  30 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-6040] Register temp_addr_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+WARNING: [Synth 8-3332] Sequential element (comp_oled/Initialize/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (comp_oled/Initialize/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (comp_oled/Example/spi_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+WARNING: [Synth 8-3332] Sequential element (comp_oled/Example/delay_comp/FSM_onehot_current_state_reg[3]) is unused and will be removed from module topmodule.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9538 ; free virtual = 19955
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+----------------------------------+---------------+----------------+
+|Module Name | RTL Object                       | Depth x Width | Implemented As | 
++------------+----------------------------------+---------------+----------------+
+|oled_init   | after_state                      | 32x1          | LUT            | 
+|oled_init   | after_state                      | 32x5          | LUT            | 
+|oled_init   | temp_sdata                       | 32x1          | LUT            | 
+|oled_init   | temp_sdata                       | 32x8          | LUT            | 
+|oled_ex     | after_state                      | 32x1          | LUT            | 
+|oled_ex     | temp_addr                        | 32x1          | LUT            | 
+|oled_ex     | after_state                      | 32x1          | LUT            | 
+|oled_ex     | temp_addr                        | 32x1          | LUT            | 
+|oled_ex     | char_lib_comp/dout_reg           | 1024x8        | Block RAM      | 
+|topmodule   | comp_oled/Initialize/temp_sdata  | 32x8          | LUT            | 
+|topmodule   | comp_oled/Initialize/after_state | 32x1          | LUT            | 
+|topmodule   | comp_oled/Initialize/temp_sdata  | 32x1          | LUT            | 
++------------+----------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance comp_oled/Example/char_lib_comp/dout_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    34|
+|3     |LUT1     |    17|
+|4     |LUT2     |    49|
+|5     |LUT3     |    38|
+|6     |LUT4     |    46|
+|7     |LUT5     |    77|
+|8     |LUT6     |    86|
+|9     |MUXF7    |    15|
+|10    |MUXF8    |     6|
+|11    |RAMB18E1 |     1|
+|12    |FDCE     |     7|
+|13    |FDPE     |    14|
+|14    |FDRE     |   291|
+|15    |FDSE     |     9|
+|16    |IBUF     |     4|
+|17    |OBUF     |     6|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 198 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 2465.891 ; gain = 518.605 ; free physical = 9537 ; free virtual = 19954
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2465.891 ; gain = 634.340 ; free physical = 9537 ; free virtual = 19954
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2465.891 ; gain = 0.000 ; free physical = 9815 ; free virtual = 20232
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2465.891 ; gain = 0.000 ; free physical = 9816 ; free virtual = 20233
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ab2baecc
+INFO: [Common 17-83] Releasing license: Synthesis
+61 Infos, 131 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 2465.891 ; gain = 994.914 ; free physical = 9815 ; free virtual = 20232
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1811.434; main = 1508.673; forked = 335.724
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3760.695; main = 2465.895; forked = 1294.809
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2489.895 ; gain = 0.000 ; free physical = 9814 ; free virtual = 20231
+INFO: [Common 17-1381] The checkpoint '/home/ecslogon/Desktop/Lab 2/lab2/lab2.runs/synth_1/topmodule.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file topmodule_utilization_synth.rpt -pb topmodule_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May 23 15:11:41 2024...
